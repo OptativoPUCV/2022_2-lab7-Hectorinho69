@@ -103,3 +103,18 @@ heap.c:43:3: note: each undeclared identifier is reported only once for each fun
 cc1: all warnings being treated as errors
 Compilation failed
 03a0e6c
+Sun 16 Oct 2022 04:12:20 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:33:28: error: ‘heapElemen’ undeclared (first use in this function); did you mean ‘heapElem’?
+   33 |     pq->heapArray= realloc(heapElemen,(pq->capac)*sizeof(heapElem));
+      |                            ^~~~~~~~~~
+      |                            heapElem
+heap.c:33:28: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:43:3: error: ‘size’ undeclared (first use in this function)
+   43 |   size++;
+      |   ^~~~
+Compilation failed
+ceff114
