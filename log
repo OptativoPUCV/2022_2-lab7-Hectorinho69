@@ -130,3 +130,18 @@ heap.c:33:28: error: ‘heapElemen’ undeclared (first use in this function); d
 heap.c:33:28: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 8c34725
+Sun 16 Oct 2022 04:12:55 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:33:28: error: ‘heapElemen’ undeclared (first use in this function); did you mean ‘heapElem’?
+   33 |     pq->heapArray= realloc(heapElemen*,(pq->capac)*sizeof(heapElem));
+      |                            ^~~~~~~~~~
+      |                            heapElem
+heap.c:33:28: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:33:39: error: expected expression before ‘,’ token
+   33 |     pq->heapArray= realloc(heapElemen*,(pq->capac)*sizeof(heapElem));
+      |                                       ^
+Compilation failed
+0774fcb
