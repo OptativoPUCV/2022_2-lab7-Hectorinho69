@@ -197,3 +197,17 @@ Sun 16 Oct 2022 04:17:24 PM UTC:
  tests:  7|1
 total_score: 45/70
 0eeb9fd
+Sun 16 Oct 2022 04:36:13 PM UTC: 
+ heap.c | 25 ++++++++++++++++++++++++-
+ 1 file changed, 24 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:52:3: error: ‘prio’ undeclared (first use in this function)
+   52 |   prio = pq->heapArray[0].priority;
+      |   ^~~~
+heap.c:52:3: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:53:3: error: ‘current’ undeclared (first use in this function)
+   53 |   current = 1;
+      |   ^~~~~~~
+Compilation failed
+b2fd50b
